@@ -1,622 +1,814 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="Kavelt Water - Pure and refreshing drinking water">
+    <meta
+      name="description"
+      content="Kavelt Water - Pure and refreshing drinking water"
+    />
 
     <title>Kavelt Water | Pure Hydration</title>
 
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- ================= HEADER ================= -->
     <header class="main-header">
-        <div class="header-inner">
-            <!-- Left Navigation -->
-            <nav class="nav-left">
-                <a href="#about">About Us</a>
-                <a href="#products" class="active">
-                    Products
-                </a>
-            </nav>
-            <!-- Mobile Menu Button -->
-            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <div class="header-inner">
+        <!-- Left Navigation -->
+        <nav class="nav-left">
+          <a href="#about">About Us</a>
+          <a href="#products" class="active"> Products </a>
+        </nav>
+        <!-- Mobile Menu Button -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-                <span></span>
-                <span></span>
-                <span></span>
-
-            </button>
-
-            <!-- Logo -->
-            <a href="#" class="brand-logo">
-                <div class="logo-box">
-                    KAVELT
-                </div>
-                <div class="logo-subtitle">
-                    PREMIUM WATER
-                </div>
-            </a>
-            <!-- Right Navigation -->
-            <nav class="nav-right">
-                <a href="javascript:void(0)" onclick="openModal()" class="contact-link">
-                    Contact Us
-                </a>
-                <a href="javascript:void(0)" onclick="openModal()" class="order-btn">
-                    <!-- <span>🛒</span> -->
-                    <span>Order Now</span>
-                    <span>→</span>
-                </a>
-            </nav>
-        </div>
+        <!-- Logo -->
+        <a href="#" class="brand-logo">
+          <div class="logo-box">KAVELT</div>
+          <div class="logo-subtitle">PREMIUM WATER</div>
+        </a>
+        <!-- Right Navigation -->
+        <nav class="nav-right">
+          <a
+            href="javascript:void(0)"
+            onclick="openModal()"
+            class="contact-link"
+          >
+            Contact Us
+          </a>
+          <a href="/pages/formRequest.html" class="order-btn">
+            <span>Order Now</span>
+            <span>→</span>
+          </a>
+        </nav>
+      </div>
     </header>
 
     <!-- ================= MOBILE NAV ================= -->
 
     <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">About Us</a>
 
-        <a href="#about">About Us</a>
+      <a href="#products">Products</a>
 
-        <a href="#products">Products</a>
+      <a href="#career">Career</a>
 
-        <a href="#career">Career</a>
-
-        <a href="#contact">Contact Us</a>
-
+      <a href="#contact">Contact Us</a>
     </div>
     <!-- ================= HERO SECTION ================= -->
 
     <main>
-        <section class="hero" id="home">
-            <!-- Hero Background -->
-            <div class="hero-background"></div>
-            <!-- Content -->
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>
-                        <span>PURE WATER.</span>
-                        <span>MADE FOR <strong>INDORE.</strong></span>
-                    </h1>
-                    <p class='hero-subtitle'>
-                        Indore's Trusted Water Brand
-                    </p>
-
-                    <div class="hero-underline"></div>
-                </div>
-
-                <!-- Bottle Image -->
-                <div class="hero-product">
-
-                    <img src="assets/home_image.png" alt="Kavelt Water Bottles">
-
-                </div>
-            </div>
-        </section>
-
-
-        <!-- ================= ABOUT / SECOND SECTION =================-->
-        <section class="dummy-section trusted-section" id="about">
-            <div class="trusted-container">
-
-                <!-- Top Section: Full Width Heading & Description -->
-                <div class="trusted-top-content">
-
-                    <!-- Left Side: 3-Line Title -->
-                    <div class="trusted-heading">
-                        <span class="js-shine text-red">Indore's Trusted</span>
-                        <span class="text-gray">Premium</span>
-                        <span class="text-gray">Water Brand</span>
-                    </div>
-
-                    <!-- Right Side: Description -->
-                    <p class="trusted-desc">
-                        Established way back in 2005, Energy Beverages Pvt. Ltd. has always believed in giving back to
-                        the people
-                        and the environment. The idea of a vital product like bottled water came from the fact that
-                        millions of people do not have access to safe and clean drinking water.
-                        We at Energy Beverages practice a strict quality-centric process and place great importance on
-                        being a virtue-driven manufacturing company.
-                    </p>
-
-                </div>
-
-                <!-- Bottom Section: Cards Carousel with Arrows -->
-                <div class="trusted-carousel-wrapper">
-                    <!-- Top Right Arrow Buttons -->
-                    <div class="carousel-arrows">
-                        <button class="arrow-btn" id="prevBtn" aria-label="Previous Slide">&larr;</button>
-                        <button class="arrow-btn" id="nextBtn" aria-label="Next Slide">&rarr;</button>
-                    </div>
-
-                    <!-- Fixed Height Carousel Stage -->
-                    <div class="carousel-stage" id="carouselStage">
-                        <!-- Slide 1 -->
-                        <div class="product-card">
-                            <div class="card-image-box">
-                                <img src="assets/cards_image/distributer.jpeg" alt="Product 1">
-                            </div>
-                        </div>
-
-                        <!-- Slide 2 -->
-                        <div class="product-card">
-                            <div class="card-image-box">
-                                <img src="assets/cards_image/office.jpeg" alt="Product 2">
-                            </div>
-                        </div>
-
-                        <!-- Slide 3 -->
-                        <div class="product-card">
-                            <div class="card-image-box">
-                                <img src="assets/cards_image/retailer.jpeg" alt="Product 3">
-                            </div>
-                        </div>
-
-                        <!-- Slide 4 -->
-                        <div class="product-card">
-                            <div class="card-image-box">
-                                <img src="assets/cards_image/kavelt_hai_tou_trust_hai.jpeg" alt="Product 4">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Bottom Pagination Dots -->
-                    <div class="carousel-dots" id="carouselDots"></div>
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- ================= PRODUCTS SECTION ================= -->
-        <section class="dummy-section products-section" id="products">
-            <div class="products-container">
-
-                <!-- Top Header: 2-Column Grid Like ClearPani -->
-                <div class="products-top-header">
-                    <div class="products-title">
-                        <h2>Find the perfect bottle for every occasion.</h2>
-                    </div>
-                    <div class="products-subtitle">
-                        <p>Whether you're on the move, at work, at home, or serving guests, Kavelt offers thoughtfully
-                            designed pack sizes to suit every lifestyle and hydration need.</p>
-                    </div>
-                </div>
-
-                <!-- Products Grid -->
-                <div class="products-grid">
-
-                    <!-- Product Card 1 -->
-                    <div class="product-item-card">
-                        <div class="product-img-holder">
-                            <img src="assets/producat_image/200ml.jpeg" alt="200ml Bottle">
-                        </div>
-                        <div class="product-info">
-                            <h3>Kavelt Water 200 ML</h3>
-                            <span class="pack-size">(Pack of 48)</span>
-                            <button href="javascript:void(0)" onclick="openModal()" class="enquire-btn"
-                                type="button">ENQUIRE</button>
-                        </div>
-                    </div>
-
-                    <!-- Product Card 2 -->
-                    <div class="product-item-card">
-                        <div class="product-img-holder">
-                            <img src="assets/producat_image/500ml.png" alt="500ml Bottle">
-                        </div>
-                        <div class="product-info">
-                            <h3>Kavelt Water 500 ML</h3>
-                            <span class="pack-size">(Pack of 24)</span>
-                            <button href="javascript:void(0)" onclick="openModal()" class="enquire-btn"
-                                type="button">ENQUIRE</button>
-                        </div>
-                    </div>
-
-                    <!-- Product Card 3 -->
-                    <div class="product-item-card">
-                        <div class="product-img-holder">
-                            <img src="assets/producat_image/1L (2).png" alt="1000ml Bottle">
-                        </div>
-                        <div class="product-info">
-                            <h3>Kavelt Water 1000 ML</h3>
-                            <span class="pack-size">(Pack of 12)</span>
-                            <button href="javascript:void(0)" onclick="openModal()" class="enquire-btn"
-                                type="button">ENQUIRE</button>
-                        </div>
-                    </div>
-
-                    <!-- Product Card 4 -->
-                    <div class="product-item-card">
-                        <div class="product-img-holder">
-                            <img src="assets/producat_image/2L.jpg" alt="2 Litres Bottle">
-                        </div>
-                        <div class="product-info">
-                            <h3>Kavelt Water 2 Ltr</h3>
-                            <span class="pack-size">(Pack of 6)</span>
-                            <button href="javascript:void(0)" onclick="openModal()" class="enquire-btn"
-                                type="button">ENQUIRE</button>
-                        </div>
-                    </div>
-
-                    <!-- Product Card 5 -->
-                    <div class="product-item-card">
-                        <div class="product-img-holder">
-                            <img src="assets/producat_image/6L.jpeg" alt="6 Litres Bottle">
-                        </div>
-                        <div class="product-info">
-                            <h3>Kavelt Water 6 Litres</h3>
-                            <span class="pack-size">(Family Pack)</span>
-                            <button href="javascript:void(0)" onclick="openModal()" class="enquire-btn"
-                                type="button">ENQUIRE</button>
-                        </div>
-                    </div>
-
-                    <!-- Product Card 6 -->
-                    <div class="product-item-card">
-                        <div class="product-img-holder">
-                            <img src="assets/producat_image/20L.jpeg" alt="20 Litres Bottle">
-                        </div>
-                        <div class="product-info">
-                            <h3>Kavelt Water 20 Litres</h3>
-                            <span class="pack-size">(Bubble Jar)</span>
-                            <button href="javascript:void(0)" onclick="openModal()" class="enquire-btn"
-                                type="button">ENQUIRE</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= INDORE PRESENCE SECTION ================= -->
-        <!-- ================= SECTION 4: INDORE PRESENCE ================= -->
-        <section class="presence-section" id="presence">
-
-            <!-- Section Title (ClearPani Style) -->
-            <div class="presence-header">
-                <h2>Indore Presence</h2>
-            </div>
-
-            <!-- Aapka Existing Grid Code (Same Rehne Dein) -->
-            <div class="grid-presence-container">
-
-                <!-- LEFT COLUMN (2 Cards) -->
-                <div class="presence-col">
-                    <!-- Card 1 -->
-                    <div data-reveal="true" class="card-presence aspect-1-37">
-                        <div class="card-num">2+</div>
-                        <div class="card-label">Years of<br>Experience</div>
-                        <img src="assets/presence/years.png" alt="Years of Experience" class="img-pos-1">
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div data-reveal="true" class="card-presence aspect-0-97">
-                        <div class="card-num">1,600+</div>
-                        <div class="card-label">Clients</div>
-                        <img src="assets/presence/client.png" alt="HoReCa Clients" class="img-pos-2">
-                    </div>
-                </div>
-
-                <!-- CENTER COLUMN (1 Tall Card) -->
-                <div class="presence-col presence-col-center">
-                    <!-- Card 3 -->
-                    <div data-reveal="true" class="card-presence card-tall">
-                        <div class="card-num">200+</div>
-                        <div class="card-label">Distributors</div>
-                        <img src="assets/presence/distributer.png" alt="Distributors" class="img-pos-center">
-                    </div>
-                </div>
-
-                <!-- RIGHT COLUMN (2 Cards) -->
-                <div class="presence-col">
-                    <!-- Card 4 -->
-                    <div data-reveal="true" class="card-presence aspect-1-37 text-right-card">
-                        <div class="card-num">500+</div>
-                        <div class="card-label">Retail Outlets</div>
-                        <img src="assets/presence/Retails.png" alt="Retail Outlets" class="img-pos-4">
-                    </div>
-
-                    <!-- Card 5 -->
-                    <div data-reveal="true" class="card-presence aspect-0-97">
-                        <div class="card-num">50+</div>
-                        <div class="card-label">Delivery<br>Vehicles</div>
-                        <img src="assets/presence/production.png" alt="Delivery Vehicles" class="img-pos-5">
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- ================= MEDIA ================= -->
-
-        <section class="quality-section">
-            <div class="quality-card-box">
-
-                <!-- 1. Top Header Grid (Title & Description) -->
-                <div class="quality-header-grid">
-
-                    <!-- Title Left -->
-                    <div class="quality-title-col">
-                        <h2 class="quality-main-heading">
-                            Impeccable<br>
-                            <span class="red-highlight">Quality</span><br>
-                            Standards <span class="red-highlight">&gt;</span>
-                        </h2>
-                    </div>
-
-                    <!-- Description Right -->
-                    <div class="quality-desc-col">
-                        <p class="quality-desc-primary">
-                            Every drop of Kavelt Water is tried and tested rigorously for the safety of our loved ones.
-                        </p>
-                        <p class="quality-desc-secondary">
-                            We follow the best practices for manufacturing and comply with international safety,
-                            hygiene, and quality standards to deliver products that are safe, durable, and of the
-                            highest excellence.
-                        </p>
-                    </div>
-
-                </div>
-
-                <!-- 2. Main Hero Banner Image -->
-                <div class="quality-hero-wrapper">
-                    <img src="assets/Quality_image/quality_image.jpeg"
-                        alt="A pristine drop of water suspended over clear blue water" class="quality-hero-img"
-                        loading="lazy">
-                </div>
-
-                <!-- 3. Bottom 3-Card Grid -->
-                <div class="quality-steps-grid">
-
-                    <!-- Step 1 -->
-                    <div class="quality-step-item">
-                        <div class="step-header">
-                            <img src="assets/Quality_image/11.png" alt="11-Stage Purification" width="73" height="56"
-                                class="step-icon" loading="lazy">
-                            <h3 class="step-title">5-Stage Purification</h3>
-                        </div>
-                        <p class="step-text">
-                            Every drop passes through an advanced 11-stage purification process, including multi-media
-                            filtration, reverse osmosis, ozonation, and UV sterilization for safe and consistent
-                            drinking water.
-                        </p>
-                    </div>
-
-                    <!-- Step 2 -->
-                    <div class="quality-step-item">
-                        <div class="step-header">
-                            <img src="assets/Quality_image/2.png" alt="121 Quality Checks" width="50" height="63"
-                                class="step-icon" loading="lazy">
-                            <h3 class="step-title">121 Quality Checks</h3>
-                        </div>
-                        <p class="step-text">
-                            Each batch undergoes 121 rigorous quality checks across our manufacturing and laboratory
-                            systems to ensure the same trusted standard in every bottle.
-                        </p>
-                    </div>
-
-                    <!-- Step 3 -->
-                    <div class="quality-step-item">
-                        <div class="step-header">
-                            <img src="assets/Quality_image/3.png" alt="Zero Discharge" width="60" height="60"
-                                class="step-icon" loading="lazy">
-                            <h3 class="step-title">Zero Discharge</h3>
-                        </div>
-                        <p class="step-text">
-                            Our zero-discharge facilities recover, treat, and reuse process water, helping reduce
-                            environmental impact and support responsible manufacturing.
-                        </p>
-                    </div>
-
-                    <div class="quality-step-item">
-                        <div class="step-header">
-                            <img src="assets/Quality_image/4.png" alt="Integrated Operations" width="60" height="60"
-                                class="step-icon" loading="lazy">
-                            <h3 class="step-title">Integrated Operations</h3>
-                        </div>
-                        <p class="step-text">
-                            From preform moulding to filling and packaging, our integrated operations ensure complete
-                            quality control and supply consistency.
-                        </p>
-                    </div>
-
-                    <div class="quality-step-item">
-                        <div class="step-header">
-                            <img src="assets/Quality_image/5.png" alt="Green Manufacturing" width="60" height="60"
-                                class="step-icon" loading="lazy">
-                            <h3 class="step-title">Green Manufacturing</h3>
-                        </div>
-                        <p class="step-text">
-                            Energy-efficient processes, recyclable packaging initiatives, and responsible water
-                            management help us manufacture with a lower environmental footprint.
-                        </p>
-                    </div>
-
-                    <div class="quality-step-item">
-                        <div class="step-header">
-                            <img src="assets/Quality_image/6.png" alt="Hygienic Filling Systems" width="60" height="60"
-                                class="step-icon" loading="lazy">
-                            <h3 class="step-title">Hygienic Filling Systems</h3>
-                        </div>
-                        <p class="step-text">
-                            Fully automated process with zero human touch operate in a controlled hygienic environment
-                            to maintain purity from production to packaging.manufacturing.
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-
-
-        <!-- ================= FOOTER SECTION WITH MARQUEE ANIMATION ================= -->
-        <footer class="footer-wrapper">
-
-            <!-- 1. SLIDING MARQUEE IMAGE ANIMATION (SKYLINE) -->
-            <div class="marquee-outer">
-                <div class="marquee-track">
-                    <img src="assets/footer/footer_page1.png" alt="Skyline" class="skyline-img">
-                    <img src="assets/footer/footer_page1.png" alt="Skyline" class="skyline-img">
-                    <img src="assets/footer/footer_page1.png" alt="Skyline" class="skyline-img">
-                    <img src="assets/footer/footer_page1.png" alt="Skyline" class="skyline-img">
-                    <img src="assets/footer/footer_page1.png" alt="Skyline" class="skyline-img">
-                    <img src="assets/footer/footer_page1.png" alt="Skyline" class="skyline-img">
-                    <img src="assets/footer/footer_page1.png" alt="Skyline" class="skyline-img">
-                    <img src="assets/footer/footer_page1.png" alt="Skyline" class="skyline-img">
-                </div>
-            </div>
-
-            <!-- 2. MAIN FOOTER CONTENT CONTAINER -->
-            <div class="footer-inner">
-                <div class="footer-gradient-overlay"></div>
-
-                <div class="footer-content">
-
-                    <!-- Top Header: Logo, Brochure Button & Certification Badge -->
-                    <div class="footer-top-grid">
-                        <a href="#" class="footer-logo">
-                            <img src="assets/logo-white.png" alt="Kavelt Water Logo" class="brand-logo">
-                        </a>
-
-                    </div>
-
-                    <div class="footer-divider"></div>
-
-                    <!-- Footer Links Columns Grid (12-Column Based Structure) -->
-                    <div class="footer-links-grid">
-
-                        <!-- Column 2: Quick Links -->
-                        <div class="footer-col col-span-3">
-                            <h4>Quick Links</h4>
-                            <ul>
-                                <li><a href="#about">About Us</a></li>
-                                <li><a href="#products">Products</a></li>
-                                <li><a href="#presence">Presence</a></li>
-                                <li><a href="#quality">Quality Standards</a></li>
-                            </ul>
-                        </div>
-
-                        <!-- Column 3: Products -->
-                        <div class="footer-col col-span-4">
-                            <h4>Our Offerings</h4>
-                            <ul>
-                                <li><a href="#">Packaged Mineral Water</a></li>
-                                <li><a href="#">HoReCa Customized Bottles</a></li>
-                                <li><a href="#">Institutional Supply</a></li>
-                            </ul>
-                        </div>
-
-                        <!-- Column 4: Contact -->
-                        <div class="footer-col col-span-3">
-                            <h4>Contact Us</h4>
-                            <p class="footer-text">Indore, Madhya Pradesh, India</p>
-                            <p class="footer-text">Phone: +91 731 234 5678</p>
-                            <p class="footer-text">Email: info@kaveltwater.com</p>
-                        </div>
-
-                    </div>
-
-                    <div class="footer-divider"></div>
-
-                    <!-- Social Links Row -->
-                    <div class="footer-social-row">
-                        <a href="#">Instagram</a>
-                        <a href="#">Facebook</a>
-                        <a href="#">LinkedIn</a>
-                        <a href="#">Twitter</a>
-                    </div>
-
-                    <div class="footer-divider"></div>
-
-                    <!-- Bottom Copyright Bar -->
-                    <div class="footer-bottom-bar">
-                        <p>&copy; 2026 Kavelt Water. All Rights Reserved.</p>
-                        <div class="legal-links">
-                            <a href="#">Privacy Policy</a>
-                            <a href="#">Terms & Conditions</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </footer>
-
-        <!-- Buttons (Apne existing buttons par ye onclick trigger add karein) -->
-
-        <!-- ================= ORDER ENQUIRY MODAL POPUP ================= -->
-        <div id="orderModal" class="modal-overlay" onclick="handleOverlayClick(event)">
-            <div class="modal-card">
-
-                <!-- Close Button (X) -->
-                <button class="modal-close-btn" onclick="closeModal()">&times;</button>
-
-                <!-- Subtitle & Main Title -->
-                <span class="modal-subheading">KAVELT PREMIUM WATER</span>
-                <h2 class="modal-title">Place an order enquiry</h2>
-                <p class="modal-description">Tell us what you need and we'll contact you.</p>
-
-                <!-- Form Fields -->
-                <form id="orderForm" onsubmit="handleFormSubmit(event)">
-
-                    <!-- Name Field -->
-                    <div class="form-group">
-                        <label for="userName">Name</label>
-                        <input type="text" id="userName" placeholder="Your name" required>
-                    </div>
-
-                    <!-- Phone Field -->
-                    <div class="form-group">
-                        <label for="userPhone">Phone</label>
-                        <input type="tel" id="userPhone" placeholder="10-digit mobile number" pattern="[0-9]{10}"
-                            required>
-                    </div>
-
-                    <!-- Bottle & Quantity Row -->
-                    <div class="form-row">
-                        <div class="form-group flex-1">
-                            <label for="bottleSize">Bottle</label>
-                            <select id="bottleSize">
-                                <option value="250ml">250ml</option>
-                                <option value="500ml" selected>500ml</option>
-                                <option value="1 Liter">1 Liter</option>
-                                <option value="5 Liter" selected>5 Liter</option>
-                                <option value="20 Liter">20 Liter Jar</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group flex-1">
-                            <label for="bottleQty">Quantity</label>
-                            <input type="number" id="bottleQty" value="1" min="1" required>
-                        </div>
-                    </div>
-
-                    <!-- Delivery / Requirement Field -->
-                    <div class="form-group">
-                        <label for="userAddress">Delivery / requirement</label>
-                        <textarea id="userAddress" rows="3"
-                            placeholder="Address, event details, preferred delivery time, etc."></textarea>
-                    </div>
-
-                    <!-- Submit Button -->
-                    <button type="submit" class="modal-submit-btn">Send Order Enquiry &rarr;</button>
-
-                </form>
-
-            </div>
+      <section class="hero" id="home">
+        <!-- Hero Background -->
+        <div class="hero-background"></div>
+        <!-- Content -->
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>
+              <span>PURE WATER.</span>
+              <span>MADE FOR <strong>INDORE.</strong></span>
+            </h1>
+            <p class="hero-subtitle">Indore's Trusted Water Brand</p>
+
+            <div class="hero-underline"></div>
+          </div>
+
+          <!-- Bottle Image -->
+          <div class="hero-product">
+            <img src="assets/home_image.png" alt="Kavelt Water Bottles" />
+          </div>
         </div>
+      </section>
+
+      <!-- ================= ABOUT / SECOND SECTION =================-->
+      <section class="dummy-section trusted-section" id="about">
+        <div class="trusted-container">
+          <!-- Top Section: Full Width Heading & Description -->
+          <div class="trusted-top-content">
+            <!-- Left Side: 3-Line Title -->
+            <div class="trusted-heading">
+              <span class="js-shine text-red">Indore's Trusted</span>
+              <span class="text-gray">Premium</span>
+              <span class="text-gray">Water Brand</span>
+            </div>
+
+            <!-- Right Side: Description -->
+            <p class="trusted-desc">
+              Established way back in 2005, Energy Beverages Pvt. Ltd. has
+              always believed in giving back to the people and the environment.
+              The idea of a vital product like bottled water came from the fact
+              that millions of people do not have access to safe and clean
+              drinking water. We at Energy Beverages practice a strict
+              quality-centric process and place great importance on being a
+              virtue-driven manufacturing company.
+            </p>
+          </div>
+
+          <!-- Bottom Section: Cards Carousel with Arrows -->
+          <div class="trusted-carousel-wrapper">
+            <!-- Top Right Arrow Buttons -->
+            <div class="carousel-arrows">
+              <button
+                class="arrow-btn"
+                id="prevBtn"
+                aria-label="Previous Slide"
+              >
+                &larr;
+              </button>
+              <button class="arrow-btn" id="nextBtn" aria-label="Next Slide">
+                &rarr;
+              </button>
+            </div>
+
+            <!-- Fixed Height Carousel Stage -->
+            <div class="carousel-stage" id="carouselStage">
+              <!-- Slide 1 -->
+              <div class="product-card">
+                <div class="card-image-box">
+                  <img
+                    src="assets/cards_image/distributer.jpeg"
+                    alt="Product 1"
+                  />
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="product-card">
+                <div class="card-image-box">
+                  <img src="assets/cards_image/office.jpeg" alt="Product 2" />
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="product-card">
+                <div class="card-image-box">
+                  <img src="assets/cards_image/retailer.jpeg" alt="Product 3" />
+                </div>
+              </div>
+
+              <!-- Slide 4 -->
+              <div class="product-card">
+                <div class="card-image-box">
+                  <img
+                    src="assets/cards_image/kavelt_hai_tou_trust_hai.jpeg"
+                    alt="Product 4"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Pagination Dots -->
+            <div class="carousel-dots" id="carouselDots"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PRODUCTS SECTION ================= -->
+      <section class="dummy-section products-section" id="products">
+        <div class="products-container">
+          <!-- Top Header: 2-Column Grid Like ClearPani -->
+          <div class="products-top-header">
+            <div class="products-title">
+              <h2>Find the perfect bottle for every occasion.</h2>
+            </div>
+            <div class="products-subtitle">
+              <p>
+                Whether you're on the move, at work, at home, or serving guests,
+                Kavelt offers thoughtfully designed pack sizes to suit every
+                lifestyle and hydration need.
+              </p>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="products-grid">
+            <!-- Product Card 1 -->
+            <div class="product-item-card">
+              <div class="product-img-holder">
+                <img
+                  src="assets/producat_image/200ml.jpeg"
+                  alt="200ml Bottle"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Kavelt Water 200 ML</h3>
+                <span class="pack-size">(Pack of 48)</span>
+                <button
+                  href="javascript:void(0)"
+                  onclick="openModal()"
+                  class="enquire-btn"
+                  type="button"
+                >
+                  <a
+                    href="/pages/formRequest.html"
+                    class="enquire-btn"
+                    style="text-decoration: none"
+                  >
+                    ENQUIRE
+                  </a>
+                </button>
+              </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-item-card">
+              <div class="product-img-holder">
+                <img src="assets/producat_image/500ml.png" alt="500ml Bottle" />
+              </div>
+              <div class="product-info">
+                <h3>Kavelt Water 500 ML</h3>
+                <span class="pack-size">(Pack of 24)</span>
+                <button
+                  href="javascript:void(0)"
+                  onclick="openModal()"
+                  class="enquire-btn"
+                  type="button"
+                >
+                  <a
+                    href="/pages/formRequest.html"
+                    class="enquire-btn"
+                    style="text-decoration: none"
+                  >
+                    ENQUIRE
+                  </a>
+                </button>
+              </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-item-card">
+              <div class="product-img-holder">
+                <img
+                  src="assets/producat_image/1L (2).png"
+                  alt="1000ml Bottle"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Kavelt Water 1000 ML</h3>
+                <span class="pack-size">(Pack of 12)</span>
+                <button
+                  href="javascript:void(0)"
+                  onclick="openModal()"
+                  class="enquire-btn"
+                  type="button"
+                >
+                  <a
+                    href="/pages/formRequest.html"
+                    class="enquire-btn"
+                    style="text-decoration: none"
+                  >
+                    ENQUIRE
+                  </a>
+                </button>
+              </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="product-item-card">
+              <div class="product-img-holder">
+                <img src="assets/producat_image/2L.jpg" alt="2 Litres Bottle" />
+              </div>
+              <div class="product-info">
+                <h3>Kavelt Water 2 Ltr</h3>
+                <span class="pack-size">(Pack of 6)</span>
+                <button
+                  href="javascript:void(0)"
+                  onclick="openModal()"
+                  class="enquire-btn"
+                  type="button"
+                >
+                  <a
+                    href="/pages/formRequest.html"
+                    class="enquire-btn"
+                    style="text-decoration: none"
+                  >
+                    ENQUIRE
+                  </a>
+                </button>
+              </div>
+            </div>
+
+            <!-- Product Card 5 -->
+            <div class="product-item-card">
+              <div class="product-img-holder">
+                <img
+                  src="assets/producat_image/6L.jpeg"
+                  alt="6 Litres Bottle"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Kavelt Water 6 Litres</h3>
+                <span class="pack-size">(Family Pack)</span>
+                <button
+                  href="javascript:void(0)"
+                  onclick="openModal()"
+                  class="enquire-btn"
+                  type="button"
+                >
+                  <a
+                    href="/pages/formRequest.html"
+                    class="enquire-btn"
+                    style="text-decoration: none"
+                  >
+                    ENQUIRE
+                  </a>
+                </button>
+              </div>
+            </div>
+
+            <!-- Product Card 6 -->
+            <div class="product-item-card">
+              <div class="product-img-holder">
+                <img
+                  src="assets/producat_image/20L.jpeg"
+                  alt="20 Litres Bottle"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Kavelt Water 20 Litres</h3>
+                <span class="pack-size">(Bubble Jar)</span>
+                <button
+                  href="javascript:void(0)"
+                  onclick="openModal()"
+                  class="enquire-btn"
+                  type="button"
+                >
+                  <a
+                    href="/pages/formRequest.html"
+                    class="enquire-btn"
+                    style="text-decoration: none"
+                  >
+                    ENQUIRE
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= INDORE PRESENCE SECTION ================= -->
+      <!-- ================= SECTION 4: INDORE PRESENCE ================= -->
+      <section class="presence-section" id="presence">
+        <!-- Section Title (ClearPani Style) -->
+        <div class="presence-header">
+          <h2>Indore Presence</h2>
+        </div>
+
+        <!-- Aapka Existing Grid Code (Same Rehne Dein) -->
+        <div class="grid-presence-container">
+          <!-- LEFT COLUMN (2 Cards) -->
+          <div class="presence-col">
+            <!-- Card 1 -->
+            <div data-reveal="true" class="card-presence aspect-1-37">
+              <div class="card-num">2+</div>
+              <div class="card-label">Years of<br />Experience</div>
+              <img
+                src="assets/presence/years.png"
+                alt="Years of Experience"
+                class="img-pos-1"
+              />
+            </div>
+
+            <!-- Card 2 -->
+            <div data-reveal="true" class="card-presence aspect-0-97">
+              <div class="card-num">1,600+</div>
+              <div class="card-label">Clients</div>
+              <img
+                src="assets/presence/client.png"
+                alt="HoReCa Clients"
+                class="img-pos-2"
+              />
+            </div>
+          </div>
+
+          <!-- CENTER COLUMN (1 Tall Card) -->
+          <div class="presence-col presence-col-center">
+            <!-- Card 3 -->
+            <div data-reveal="true" class="card-presence card-tall">
+              <div class="card-num">200+</div>
+              <div class="card-label">Distributors</div>
+              <img
+                src="assets/presence/distributer.png"
+                alt="Distributors"
+                class="img-pos-center"
+              />
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN (2 Cards) -->
+          <div class="presence-col">
+            <!-- Card 4 -->
+            <div
+              data-reveal="true"
+              class="card-presence aspect-1-37 text-right-card"
+            >
+              <div class="card-num">500+</div>
+              <div class="card-label">Retail Outlets</div>
+              <img
+                src="assets/presence/Retails.png"
+                alt="Retail Outlets"
+                class="img-pos-4"
+              />
+            </div>
+
+            <!-- Card 5 -->
+            <div data-reveal="true" class="card-presence aspect-0-97">
+              <div class="card-num">50+</div>
+              <div class="card-label">Delivery<br />Vehicles</div>
+              <img
+                src="assets/presence/production.png"
+                alt="Delivery Vehicles"
+                class="img-pos-5"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= MEDIA ================= -->
+
+      <section class="quality-section">
+        <div class="quality-card-box">
+          <!-- 1. Top Header Grid (Title & Description) -->
+          <div class="quality-header-grid">
+            <!-- Title Left -->
+            <div class="quality-title-col">
+              <h2 class="quality-main-heading">
+                Impeccable<br />
+                <span class="red-highlight">Quality</span><br />
+                Standards <span class="red-highlight">&gt;</span>
+              </h2>
+            </div>
+
+            <!-- Description Right -->
+            <div class="quality-desc-col">
+              <p class="quality-desc-primary">
+                Every drop of Kavelt Water is tried and tested rigorously for
+                the safety of our loved ones.
+              </p>
+              <p class="quality-desc-secondary">
+                We follow the best practices for manufacturing and comply with
+                international safety, hygiene, and quality standards to deliver
+                products that are safe, durable, and of the highest excellence.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2. Main Hero Banner Image -->
+          <div class="quality-hero-wrapper">
+            <img
+              src="assets/Quality_image/quality_image.jpeg"
+              alt="A pristine drop of water suspended over clear blue water"
+              class="quality-hero-img"
+              loading="lazy"
+            />
+          </div>
+
+          <!-- 3. Bottom 3-Card Grid -->
+          <div class="quality-steps-grid">
+            <!-- Step 1 -->
+            <div class="quality-step-item">
+              <div class="step-header">
+                <img
+                  src="assets/Quality_image/11.png"
+                  alt="11-Stage Purification"
+                  width="73"
+                  height="56"
+                  class="step-icon"
+                  loading="lazy"
+                />
+                <h3 class="step-title">5-Stage Purification</h3>
+              </div>
+              <p class="step-text">
+                Every drop passes through an advanced 11-stage purification
+                process, including multi-media filtration, reverse osmosis,
+                ozonation, and UV sterilization for safe and consistent drinking
+                water.
+              </p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="quality-step-item">
+              <div class="step-header">
+                <img
+                  src="assets/Quality_image/2.png"
+                  alt="121 Quality Checks"
+                  width="50"
+                  height="63"
+                  class="step-icon"
+                  loading="lazy"
+                />
+                <h3 class="step-title">121 Quality Checks</h3>
+              </div>
+              <p class="step-text">
+                Each batch undergoes 121 rigorous quality checks across our
+                manufacturing and laboratory systems to ensure the same trusted
+                standard in every bottle.
+              </p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="quality-step-item">
+              <div class="step-header">
+                <img
+                  src="assets/Quality_image/3.png"
+                  alt="Zero Discharge"
+                  width="60"
+                  height="60"
+                  class="step-icon"
+                  loading="lazy"
+                />
+                <h3 class="step-title">Zero Discharge</h3>
+              </div>
+              <p class="step-text">
+                Our zero-discharge facilities recover, treat, and reuse process
+                water, helping reduce environmental impact and support
+                responsible manufacturing.
+              </p>
+            </div>
+
+            <div class="quality-step-item">
+              <div class="step-header">
+                <img
+                  src="assets/Quality_image/4.png"
+                  alt="Integrated Operations"
+                  width="60"
+                  height="60"
+                  class="step-icon"
+                  loading="lazy"
+                />
+                <h3 class="step-title">Integrated Operations</h3>
+              </div>
+              <p class="step-text">
+                From preform moulding to filling and packaging, our integrated
+                operations ensure complete quality control and supply
+                consistency.
+              </p>
+            </div>
+
+            <div class="quality-step-item">
+              <div class="step-header">
+                <img
+                  src="assets/Quality_image/5.png"
+                  alt="Green Manufacturing"
+                  width="60"
+                  height="60"
+                  class="step-icon"
+                  loading="lazy"
+                />
+                <h3 class="step-title">Green Manufacturing</h3>
+              </div>
+              <p class="step-text">
+                Energy-efficient processes, recyclable packaging initiatives,
+                and responsible water management help us manufacture with a
+                lower environmental footprint.
+              </p>
+            </div>
+
+            <div class="quality-step-item">
+              <div class="step-header">
+                <img
+                  src="assets/Quality_image/6.png"
+                  alt="Hygienic Filling Systems"
+                  width="60"
+                  height="60"
+                  class="step-icon"
+                  loading="lazy"
+                />
+                <h3 class="step-title">Hygienic Filling Systems</h3>
+              </div>
+              <p class="step-text">
+                Fully automated process with zero human touch operate in a
+                controlled hygienic environment to maintain purity from
+                production to packaging.manufacturing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FOOTER SECTION WITH MARQUEE ANIMATION ================= -->
+      <footer class="footer-wrapper">
+        <!-- 1. SLIDING MARQUEE IMAGE ANIMATION (SKYLINE) -->
+        <div class="marquee-outer">
+          <div class="marquee-track">
+            <img
+              src="assets/footer/footer_page1.png"
+              alt="Skyline"
+              class="skyline-img"
+            />
+            <img
+              src="assets/footer/footer_page1.png"
+              alt="Skyline"
+              class="skyline-img"
+            />
+            <img
+              src="assets/footer/footer_page1.png"
+              alt="Skyline"
+              class="skyline-img"
+            />
+            <img
+              src="assets/footer/footer_page1.png"
+              alt="Skyline"
+              class="skyline-img"
+            />
+            <img
+              src="assets/footer/footer_page1.png"
+              alt="Skyline"
+              class="skyline-img"
+            />
+            <img
+              src="assets/footer/footer_page1.png"
+              alt="Skyline"
+              class="skyline-img"
+            />
+            <img
+              src="assets/footer/footer_page1.png"
+              alt="Skyline"
+              class="skyline-img"
+            />
+            <img
+              src="assets/footer/footer_page1.png"
+              alt="Skyline"
+              class="skyline-img"
+            />
+          </div>
+        </div>
+
+        <!-- 2. MAIN FOOTER CONTENT CONTAINER -->
+        <div class="footer-inner">
+          <div class="footer-gradient-overlay"></div>
+
+          <div class="footer-content">
+            <!-- Top Header: Logo, Brochure Button & Certification Badge -->
+            <div class="footer-top-grid">
+              <a href="#" class="footer-logo">
+                <img
+                  src="assets/logo-white.png"
+                  alt="Kavelt Water Logo"
+                  class="brand-logo"
+                />
+              </a>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <!-- Footer Links Columns Grid (12-Column Based Structure) -->
+            <div class="footer-links-grid">
+              <!-- Column 2: Quick Links -->
+              <div class="footer-col col-span-3">
+                <h4>Quick Links</h4>
+                <ul>
+                  <li><a href="#about">About Us</a></li>
+                  <li><a href="#products">Products</a></li>
+                  <li><a href="#presence">Presence</a></li>
+                  <li><a href="#quality">Quality Standards</a></li>
+                </ul>
+              </div>
+
+              <!-- Column 3: Products -->
+              <div class="footer-col col-span-4">
+                <h4>Our Offerings</h4>
+                <ul>
+                  <li><a href="#">Packaged Mineral Water</a></li>
+                  <li><a href="#">HoReCa Customized Bottles</a></li>
+                  <li><a href="#">Institutional Supply</a></li>
+                </ul>
+              </div>
+
+              <!-- Column 4: Contact -->
+              <div class="footer-col col-span-3">
+                <h4>Contact Us</h4>
+                <p class="footer-text">Indore, Madhya Pradesh, India</p>
+                <p class="footer-text">Phone: +91 731 234 5678</p>
+                <p class="footer-text">Email: info@kaveltwater.com</p>
+              </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <!-- Social Links Row -->
+            <div class="footer-social-row">
+              <a href="#">Instagram</a>
+              <a href="#">Facebook</a>
+              <a href="#">LinkedIn</a>
+              <a href="#">Twitter</a>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <!-- Bottom Copyright Bar -->
+            <div class="footer-bottom-bar">
+              <p>&copy; 2026 Kavelt Water. All Rights Reserved.</p>
+              <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Buttons (Apne existing buttons par ye onclick trigger add karein) -->
+
+      <!-- ================= ORDER ENQUIRY MODAL POPUP ================= -->
+      <div
+        id="orderModal"
+        class="modal-overlay"
+        onclick="handleOverlayClick(event)"
+      >
+        <div class="modal-card">
+          <!-- Close Button (X) -->
+          <button class="modal-close-btn" onclick="closeModal()">
+            &times;
+          </button>
+
+          <!-- Subtitle & Main Title -->
+          <span class="modal-subheading">KAVELT PREMIUM WATER</span>
+          <h2 class="modal-title">Place an order enquiry</h2>
+          <p class="modal-description">
+            Tell us what you need and we'll contact you.
+          </p>
+
+          <!-- Form Fields -->
+          <form id="orderForm" onsubmit="handleFormSubmit(event)">
+            <!-- Name Field -->
+            <div class="form-group">
+              <label for="userName">Name</label>
+              <input
+                type="text"
+                id="userName"
+                placeholder="Your name"
+                required
+              />
+            </div>
+
+            <!-- Phone Field -->
+            <div class="form-group">
+              <label for="userPhone">Phone</label>
+              <input
+                type="tel"
+                id="userPhone"
+                placeholder="10-digit mobile number"
+                pattern="[0-9]{10}"
+                required
+              />
+            </div>
+
+            <!-- Bottle & Quantity Row -->
+            <div class="form-row">
+              <div class="form-group flex-1">
+                <label for="bottleSize">Bottle</label>
+                <select id="bottleSize">
+                  <option value="250ml">250ml</option>
+                  <option value="500ml" selected>500ml</option>
+                  <option value="1 Liter">1 Liter</option>
+                  <option value="5 Liter" selected>5 Liter</option>
+                  <option value="20 Liter">20 Liter Jar</option>
+                </select>
+              </div>
+
+              <div class="form-group flex-1">
+                <label for="bottleQty">Quantity</label>
+                <input
+                  type="number"
+                  id="bottleQty"
+                  value="1"
+                  min="1"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Delivery / Requirement Field -->
+            <div class="form-group">
+              <label for="userAddress">Delivery / requirement</label>
+              <textarea
+                id="userAddress"
+                rows="3"
+                placeholder="Address, event details, preferred delivery time, etc."
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="modal-submit-btn">
+              Send Order Enquiry &rarr;
+            </button>
+          </form>
+        </div>
+      </div>
     </main>
 
-
-
-
     <script src="js/script.js"></script>
-
-</body>
-
+  </body>
 </html>

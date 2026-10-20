@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kavelt Water | Order Enquiry</title>
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Arial, sans-serif;
+        background: #f5f7fa;
+        color: #202a35;
+      }
+
+      .form-page {
+        width: min(100% - 32px, 620px);
+        margin: 55px auto;
+        padding: 38px;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+      }
+
+      .form-brand {
+        color: #c62828;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-align: center;
+      }
+
+      .form-page h1 {
+        margin: 12px 0;
+        font-size: clamp(26px, 5vw, 36px);
+        text-align: center;
+      }
+
+      .form-description {
+        margin: 0 0 30px;
+        color: #697586;
+        line-height: 1.6;
+        text-align: center;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .form-group input,
+      .form-group select,
+      .form-group textarea {
+        display: block;
+        width: 100%;
+        padding: 13px 14px;
+        border: 1px solid #d9dee7;
+        border-radius: 8px;
+        background: #fff;
+        color: #202a35;
+        font: inherit;
+        outline: none;
+        transition:
+          border-color 0.2s,
+          box-shadow 0.2s;
+      }
+
+      .form-group input:focus,
+      .form-group select:focus,
+      .form-group textarea:focus {
+        border-color: #c62828;
+        box-shadow: 0 0 0 3px rgba(198, 40, 40, 0.1);
+      }
+
+      .form-group textarea {
+        resize: vertical;
+        min-height: 100px;
+      }
+
+      .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+
+      .submit-btn {
+        width: 100%;
+        padding: 15px;
+        border: none;
+        border-radius: 8px;
+        background: #c62828;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+
+      .submit-btn:hover {
+        background: #a91f1f;
+      }
+
+      .submit-btn:disabled {
+        opacity: 0.65;
+        cursor: wait;
+      }
+
+      #formMessage {
+        display: none;
+        margin-top: 18px;
+        padding: 13px;
+        border-radius: 8px;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      #formMessage.success {
+        display: block;
+        color: #176534;
+        background: #eaf7ee;
+      }
+
+      #formMessage.error {
+        display: block;
+        color: #a61b1b;
+        background: #fff0f0;
+      }
+
+      .back-link {
+        display: block;
+        margin-top: 24px;
+        color: #596579;
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      .back-link:hover {
+        color: #c62828;
+      }
+
+      @media (max-width: 480px) {
+        .form-page {
+          margin: 20px auto;
+          padding: 25px 20px;
+        }
+
+        .form-row {
+          grid-template-columns: 1fr;
+          gap: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="form-page">
+      <div class="form-brand">KAVELT PREMIUM WATER</div>
+
+      <h1>Place an Order Enquiry</h1>
+
+      <p class="form-description">
+        Tell us what you need and our team will get in touch with you.
+      </p>
+
+      <form id="orderForm">
+        <div class="form-group">
+          <label for="userName">Full Name *</label>
+          <input
+            id="userName"
+            name="userName"
+            type="text"
+            placeholder="Enter your full name"
+            maxlength="100"
+            autocomplete="name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="userPhone">Phone Number *</label>
+          <input
+            id="userPhone"
+            name="userPhone"
+            type="tel"
+            placeholder="10-digit mobile number"
+            pattern="[0-9]{10}"
+            maxlength="10"
+            inputmode="numeric"
+            autocomplete="tel"
+            required
+          />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="bottleSize">Bottle Size *</label>
+            <select id="bottleSize" name="bottleSize" required>
+              <option value="200ml">200 ML</option>
+              <option value="500ml" selected>500 ML</option>
+              <option value="1 Liter">1 Litre</option>
+              <option value="2 Liter">2 Litre</option>
+              <option value="6 Liter">6 Litres</option>
+              <option value="20 Liter">20 Litre Jar</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="bottleQty">Quantity *</label>
+            <input
+              id="bottleQty"
+              name="bottleQty"
+              type="number"
+              min="1"
+              max="100000"
+              value="1"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="userAddress">Delivery Address / Requirement *</label>
+          <textarea
+            id="userAddress"
+            name="userAddress"
+            placeholder="Enter your delivery address or business requirements"
+            maxlength="2000"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn" id="submitButton">
+          Send Order Enquiry →
+        </button>
+
+        <p id="formMessage" role="status" aria-live="polite"></p>
+      </form>
+
+      <a href="/" class="back-link">← Back to Kavelt Homepage</a>
+    </main>
+
+    <script>
+      const orderForm = document.getElementById('orderForm');
+      const submitButton = document.getElementById('submitButton');
+      const formMessage = document.getElementById('formMessage');
+
+      orderForm.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        if (!orderForm.reportValidity()) return;
+
+        submitButton.disabled = true;
+        submitButton.textContent = 'Submitting...';
+        formMessage.className = '';
+        formMessage.textContent = '';
+        formMessage.style.display = 'none';
+
+        const order = {
+          userName: document.getElementById('userName').value.trim(),
+          userPhone: document.getElementById('userPhone').value.trim(),
+          bottleSize: document.getElementById('bottleSize').value,
+          bottleQty: Number(document.getElementById('bottleQty').value),
+          userAddress: document.getElementById('userAddress').value.trim(),
+        };
+
+        try {
+          const response = await fetch('/api/order', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(order),
+          });
+
+          const result = await response.json();
+
+          if (!response.ok || !result.success) {
+            throw new Error(
+              result.message ||
+                'Unable to submit your enquiry. Please try again.'
+            );
+          }
+
+          formMessage.textContent =
+            '✓ ' +
+            result.message +
+            ' Redirecting to the homepage in 3 seconds...';
+          formMessage.className = 'success';
+
+          orderForm.reset();
+
+          submitButton.textContent = 'Enquiry Submitted ✓';
+
+          setTimeout(() => {
+            window.location.href = '/';
+          }, 3000);
+        } catch (error) {
+          formMessage.textContent =
+            error.message ||
+            'Network error. Please check your connection and try again.';
+          formMessage.className = 'error';
+
+          submitButton.disabled = false;
+          submitButton.textContent = 'Send Order Enquiry →';
+        }
+      });
+    </script>
+  </body>
+</html>
